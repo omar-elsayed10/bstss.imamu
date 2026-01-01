@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 16px;
+}
+
+.image-link {
+  display: block;
+  width: 100%;
+}
+
+.image-link img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover للابتوب */
+.image-link img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .image-link img {
+    border-radius: 12px;
+  }
+}
